@@ -10,7 +10,7 @@ export const Control = () => {
   const pathname = usePathname();
 
   const onDelete = () => {
-    fetch(`${BASE_URL}}/${slug}`, {
+    fetch(`${BASE_URL}/topics/${slug}`, {
       method: "DELETE",
     })
       .then((res) => res.json())
