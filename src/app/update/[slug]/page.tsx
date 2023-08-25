@@ -31,7 +31,7 @@ const Update = () => {
     const title = (form.elements.namedItem("title") as HTMLInputElement).value;
     const body = (form.elements.namedItem("body") as HTMLTextAreaElement).value;
 
-    fetch(`${BASE_URL}/${slug}`, {
+    fetch(`${BASE_URL}/topics/${slug}`, {
       method: "PATCH",
       headers: {
         "Content-Type": "application/json",
